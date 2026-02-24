@@ -27,7 +27,7 @@ class timerTask:
 
         scheduler = BackgroundScheduler()
         # 添加定时任务
-        scheduler.add_job(signIn.singInOfHuaxiashuyu, 'cron', day_of_week='*', hour=7, minute=0,args=(username, password),max_instances=3)
+        # scheduler.add_job(signIn.singInOfHuaxiashuyu, 'cron', day_of_week='*', hour=7, minute=0,args=(username, password),max_instances=3)
 
         # 设置每隔6个小时触发一次任务
         #scheduler.add_job(NewBing.checkCF, 'interval', hours=5,args=(auth,usernameCF, passwordCF))
